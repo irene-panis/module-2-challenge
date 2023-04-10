@@ -10,8 +10,13 @@
   src: url(../fonts/Dogica.ttf);
 }
 
+@font-face {
+  font-family: PixelMix;
+  src: url(../fonts/pixelmix.ttf);
+}
+
 body {
-  background-color: #393053;
+  background-color: #4f4961;
 }
 
 header {
@@ -42,7 +47,7 @@ nav a {
 #hero h3 {
   position: relative;
   top: 33%;
-  text-shadow: 3px 3px 5px black;
+  text-shadow: 3px 3px 10px black;
 
 }
 
@@ -55,4 +60,103 @@ h2 {
 h3 {
   line-height: 1.5;
 }
+
+.content {
+  margin: 10% 25%;
+  display: flex;
+}
+
+.heading {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 200%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.divider {
+  border-left: 5px solid #353141;
+  margin: 0 5%;
+}
+
+.content p {
+  font-family: PixelMix, 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  margin: 5% 0;
+  text-indent: 50px;
+}
+
+#work {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 1px solid black;
+  height: 75vh;
+}
+
+.work-img {
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.work-img div {
+  background-color: black;
+}
+
+#first {
+  border: 5px solid black;
+  height: 50%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#first span {
+  font-size: 200%;
+}
+
+#first span,
+.other-work span {
+  background-color: black;
+  position: relative;
+  top: 75%;
+  padding: 10px;
+}
+
+.other-work {
+  border: 5px solid black;
+  height: 25%;
+  width: calc(50% - 5px);
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+#first {
+  background-image: url(../img/library.jpg);
+  background-size: cover;
+}
+
+#second {
+  background-image: url(../img/admin.jpg);
+  background-size: cover;
+}
+
+#third {
+  background-image: url(../img/etch.jpg);
+  background-size: cover;
+}
+
+#fourth {
+  background-image: url(../img/rps.jpg);
+  background-size: cover;
+}
+
+#fifth {
+  background-image: url(../img/sign.jpg);
+  background-size: cover;
+}
+
+
+
 
