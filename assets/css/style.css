@@ -89,7 +89,6 @@ h3 {
 #work {
   display: flex;
   flex-direction: row-reverse;
-  border: 1px solid black;
   height: 75vh;
 }
 
@@ -98,7 +97,8 @@ h3 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 2%;
+  margin: 5% 0;
 }
 
 .work-img div {
@@ -107,7 +107,7 @@ h3 {
 
 #first {
   border: 5px solid black;
-  height: 50%;
+  height: 46%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -127,7 +127,7 @@ h3 {
 .other-work {
   border: 5px solid black;
   height: 25%;
-  width: calc(50% - 5px);
+  width: 49%;
   box-sizing: border-box;
   display: inline-block;
 }
