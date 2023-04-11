@@ -36,15 +36,19 @@ nav a {
   text-decoration: none;
 }
 
-#hero {
+nav a:hover {
+  text-decoration: underline;
+}
+
+#home {
   height: 90vh;
   background-image: url(../img/parallax-mountain.png);
   background-size: contain;
   text-align: center;
 }
 
-#hero h2,
-#hero h3 {
+#home h2,
+#home h3 {
   position: relative;
   top: 33%;
   text-shadow: 3px 3px 10px black;
@@ -89,74 +93,52 @@ h3 {
 #work {
   display: flex;
   flex-direction: row-reverse;
-  height: 75vh;
+  height: 80vh;
 }
 
 .work-img {
-  max-height: 100%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 2%;
+  gap: 10px;
   margin: 5% 0;
 }
 
-.work-img div {
-  background-color: black;
+.work-img div:nth-child(1) {
+  height: calc(50% - 20px);
+  width: calc(90% + 10px);
 }
 
-#first {
-  border: 5px solid black;
-  height: 46%;
-  width: 100%;
+.work-img div:nth-child(n+2) {
+  height: 25%;
+  width: 45%;
+}
+
+.proj {
+  border: 5px solid #353141;
   box-sizing: border-box;
 }
 
-#first span {
+.proj img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(0.75);
+  transition: 0.5s;
+}
+
+.proj img:hover {
+  filter: brightness(1);
+  transition: 0.5s;
+}
+
+.proj-title {
+  background-color: #353141;
+  padding: 10px;
+  position: relative;
+  bottom: 30%;
+  line-height: 2;
+}
+
+#first {
   font-size: 200%;
 }
-
-#first span,
-.other-work span {
-  background-color: black;
-  position: relative;
-  top: 75%;
-  padding: 10px;
-}
-
-.other-work {
-  border: 5px solid black;
-  height: 25%;
-  width: 49%;
-  box-sizing: border-box;
-  display: inline-block;
-}
-
-#first {
-  background-image: url(../img/library.jpg);
-  background-size: cover;
-}
-
-#second {
-  background-image: url(../img/admin.jpg);
-  background-size: cover;
-}
-
-#third {
-  background-image: url(../img/etch.jpg);
-  background-size: cover;
-}
-
-#fourth {
-  background-image: url(../img/rps.jpg);
-  background-size: cover;
-}
-
-#fifth {
-  background-image: url(../img/sign.jpg);
-  background-size: cover;
-}
-
-
-
-
