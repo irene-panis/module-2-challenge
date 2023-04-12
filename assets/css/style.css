@@ -34,10 +34,13 @@ nav li {
 
 nav a {
   text-decoration: none;
+  transition: 0.5s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: black;
+  padding: 5px;
+  transition: 0.5s;
 }
 
 #home {
@@ -152,7 +155,7 @@ h3 {
 
 .icon-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -163,7 +166,7 @@ h3 {
 }
 
 #email {
-  width: 13%;
+  width: 10%;
   height: auto;
 }
 
@@ -188,8 +191,28 @@ h3 {
   transition: 0.5s;
 }
 
+.tooltip {
+  opacity: 0;
+  background-color: #f5f4d9;
+  color: black;
+  font-family: PixelMix, 'Courier New', Courier, monospace;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+  position: fixed;
+  right: 160px;
+  bottom: 50px;
+  transition: 0.5s;
+}
+
 #avatar:hover {
   bottom: 0;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+a:hover + .tooltip {
+  bottom: 100px;
   opacity: 1;
   transition: 0.5s;
 }
