@@ -48,26 +48,23 @@ nav a:hover {
 #home {
   height: 90vh;
   background-image: url(../img/parallax-mountain.png);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
-#home h2,
-#home h3 {
+h2,
+h3 {
   position: relative;
   top: 33%;
   text-shadow: 3px 3px 10px black;
-
+  line-height: 1.5;
 }
 
 h2 {
   text-transform: uppercase;
   font-size: 400%;
   margin-bottom: 20px;
-}
-
-h3 {
-  line-height: 1.5;
 }
 
 .content {
@@ -95,6 +92,7 @@ h3 {
   text-indent: 50px;
 }
 
+/* place heading on right side and content on left */
 #work {
   display: flex;
   flex-direction: row-reverse;
@@ -109,11 +107,13 @@ h3 {
   margin: 5% 0;
 }
 
+/* target first project */
 .work-img div:nth-child(1) {
   height: calc(50% - 20px);
   width: calc(90% + 10px);
 }
 
+/* target projects after first proj */
 .work-img div:nth-child(n+2) {
   height: 25%;
   width: 45%;
@@ -144,6 +144,7 @@ h3 {
   line-height: 2;
 }
 
+/* increase font size on first proj card */
 #first {
   font-size: 200%;
 }
@@ -161,6 +162,7 @@ h3 {
   align-items: center;
 }
 
+/* set size of <a> around icons */
 #linkedin,
 #github {
   width: 25%;
@@ -172,6 +174,7 @@ h3 {
   height: auto;
 }
 
+/* set icon to match <a> size */
 .icon {
   width: 100%;
   height: 100%;
@@ -184,7 +187,7 @@ h3 {
 }
 
 #avatar {
-  width: 10%;
+  width: 200px;
   height: auto;
   position: fixed;
   right: 0;
@@ -193,6 +196,7 @@ h3 {
   transition: 0.5s;
 }
 
+/* create invisible tooltip */
 .tooltip {
   opacity: 0;
   background-color: #f5f4d9;
@@ -213,8 +217,80 @@ h3 {
   transition: 0.5s;
 }
 
+/* reveal tooltip when hovering sibling link */
 a:hover + .tooltip {
   bottom: 100px;
   opacity: 1;
   transition: 0.5s;
+}
+
+/* make proj titles smaller when window is smaller */
+@media screen and (max-width: 1622px) {
+  .proj-title {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 735px) {
+
+  header {
+    flex-direction: column;
+    padding: 25px 0;
+  }
+
+  .content {
+    flex-direction: column;
+    margin: 10% 5%;
+  }
+
+  .heading {
+    writing-mode: horizontal-tb;
+    font-size: 175%;
+  }
+
+  .divider {
+    border-left: 0;
+    border-top: 5px solid #353141;
+    margin: 5% 0;
+  }
+
+  #work {
+    flex-direction: column;
+  }
+
+  .work-img {
+    justify-content: center;
+  }
+
+  #first {
+    font-size: 150%;
+  }
+
+  .proj-title {
+    font-size: 48%;
+    line-height: 2;
+  }
+
+  /* prevent contact section from disappearing 
+  under work section */
+  #contact {
+    margin-top: 300px;
+  }
+
+  .resume {
+    text-align: center;
+  }
+
+  #avatar {
+    position: static;
+    width: 100px;
+    height: auto;
+  }
+}
+
+/* reset margin offset */
+@media screen and (max-width: 550px) {
+  #contact {
+    margin-top: 0;
+  }
 }
