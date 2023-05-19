@@ -14,7 +14,7 @@ The "Contact" section provides links on how and where to contact me.
 
 There is also an interactive icon in the corner of the page (located at the bottom in smaller viewports) that will allow users in the future to download my resume upon clicking.
 
-Live: https://irene-panis.github.io/module-2-challenge/
+Live: https://irene-panis.github.io/portfolio/
 
 ![Screenshot of landing page, including navigation bar and hero image](assets/img/preview.jpg)
 
