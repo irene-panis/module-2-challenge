@@ -185,6 +185,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .icon-container {
@@ -200,11 +201,6 @@ h2 {
   height: auto;
 }
 
-#email {
-  width: 10%;
-  height: auto;
-}
-
 /* set icon to match <a> size */
 .icon {
   width: 100%;
@@ -215,6 +211,10 @@ h2 {
 .icon:hover {
   transition: 0.5s;
   filter: invert(97%) sepia(69%) saturate(0%) hue-rotate(284deg) brightness(117%) contrast(100%);
+}
+
+.contact-links > span {
+  font-family: PixelMix;
 }
 
 #avatar {
