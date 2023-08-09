@@ -108,13 +108,13 @@ h2 {
 }
 
 /* target first project */
-.work-img div:nth-child(1) {
+.work-img > div:nth-child(1) {
   height: calc(50% - 20px);
   width: calc(90% + 10px);
 }
 
 /* target projects after first proj */
-.work-img div:nth-child(n+2) {
+.work-img > div:nth-child(n+2) {
   height: 25%;
   width: 45%;
 }
@@ -122,18 +122,49 @@ h2 {
 .proj {
   border: 5px solid #353141;
   box-sizing: border-box;
+  position: relative;
 }
 
 .proj img {
   height: 100%;
   width: 100%;
-  filter: brightness(0.75);
-  transition: 0.5s;
 }
 
-.proj img:hover {
-  filter: brightness(1);
-  transition: 0.5s;
+.proj .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, .8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 5%;
+  opacity: 0;
+}
+
+.proj:hover .overlay {
+  opacity: 1;
+}
+
+.proj:hover .proj-title {
+  opacity: 0;
+}
+
+.proj .overlay * {
+  text-align: center;
+  font-family: PixelMix;
+  color: black;
+}
+
+.proj .small * {
+  font-size: 0.75rem;
+}
+
+.proj img,
+.proj .overlay,
+.proj-title {
+  transition: 0.5s ease-in-out;
 }
 
 .proj-title {
