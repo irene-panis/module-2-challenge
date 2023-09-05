@@ -8,11 +8,11 @@ This project is a portfolio showcasing my personal background and my work as a d
 
 Users will be able to scroll through the entire page and observe different sections containing information about myself and my work. The links in the navigation bar are also available for quick jumps to various sections. 
 
-The "Work" section contains linked images of my past personal projects which, upon clicking, lead to their respective GitHub repositories.
+The "Work" section contains images of my past personal projects which, upon hover, display their respective descriptions complete with links to both the deployed application and the GitHub repository.
 
 The "Contact" section provides links on how and where to contact me.
 
-There is also an interactive icon in the corner of the page (located at the bottom in smaller viewports) that will allow users in the future to download my resume upon clicking.
+There is also an interactive icon in the corner of the page (located at the bottom in smaller viewports) that allows users to view my resume upon clicking.
 
 Live: https://irene-panis.github.io/portfolio/
 
